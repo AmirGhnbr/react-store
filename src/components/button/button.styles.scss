@@ -15,10 +15,11 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-  
+    
     &:hover {
       background-color: white;
       color: black;
+      padding: 0 34px 0 34px;
       border: 1px solid black;
     }
   
