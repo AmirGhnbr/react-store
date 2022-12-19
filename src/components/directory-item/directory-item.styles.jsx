@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const backgroundImage = styled.div`
+export const BackgroundImage = styled.div`
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -48,7 +48,7 @@ export const DirectoryItemContainer = styled.div`
   &:hover {
     cursor: pointer;
 
-    & ${backgroundImage} {
+    & ${BackgroundImage} {
       transform: scale(1.1);
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }

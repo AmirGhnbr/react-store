@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 import {
-  backgroundImage,
+  BackgroundImage,
   Body,
   DirectoryItemContainer,
 } from "./directory-item.styles";
@@ -14,7 +14,7 @@ const DirectoryItem = ({ category }) => {
 
   return (
     <DirectoryItemContainer onClick={onNavigateHandler}>
-      <backgroundImage imageUrl={imageUrl} />
+      <BackgroundImage imageUrl={imageUrl} />
       <Body>
         <h2>{title}</h2>
         <p>Shop now</p>
