@@ -20,13 +20,13 @@ from '../../utils/firebase/firebase.utils';
 
 
 export function* getSnapshotFromUserAuth(userAuth, additionalDetails){
-    try {
+    try { 
         const userSnapshot = yield call(
-            createUserDocumentFromAuth, 
-            userAuth, 
+            createUserDocumentFromAuth,
+            userAuth,
             additionalDetails
-        );
-        yield put(signInSuccess({id: userSnapshot.id, ...userSnapshot.data()}))
+          );
+          yield put(signInSuccess({ id: userSnapshot.id, ...userSnapshot.data }));
 
     } catch (error) {
         yield put(signInFailed(error));

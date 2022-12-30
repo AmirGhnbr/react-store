@@ -110,7 +110,7 @@ export const getCurrentUser = () => {
         const unsubscribe = onAuthStateChanged(
             auth,
             (userAuth)=>{
-                unsubscribe(),
+                unsubscribe();
                 resolve(userAuth);
             },
             reject
